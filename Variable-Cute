@@ -1,0 +1,113 @@
+/* Variable definitions
+   ====================
+   <Variable name="keycolor" description="Main Color" type="color" default="#539bcd" value="#ecb892"/>
+
+   <Group description="Page Text" selector="body">
+     <Variable name="body.font" description="Font" type="font"
+         default="normal normal 13px 'Trebuchet MS',Trebuchet,sans-serif" value="normal normal 13px &#39;Trebuchet MS&#39;,Trebuchet,sans-serif"/>
+     <Variable name="body.text.color" description="Text Color" type="color" default="#bbbbbb" value="#666666"/>
+   </Group>
+
+   <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+     <Variable name="body.background.color" description="Outer Background" type="color" default="#539bcd" value="#ecb892"/>
+     <Variable name="content.background.color" description="Main Background" type="color" default="transparent" value="transparent"/>
+   </Group>
+
+   <Group description="Links" selector=".main-outer">
+     <Variable name="link.color" description="Link Color" type="color" default="#ff9900" value="#ff9900"/>
+     <Variable name="link.visited.color" description="Visited Color" type="color" default="#b87209" value="#b87209"/>
+     <Variable name="link.hover.color" description="Hover Color" type="color" default="#ff9900" value="#ff9900"/>
+   </Group>
+
+   <Group description="Blog Title" selector=".header h1">
+     <Variable name="header.font" description="Font" type="font"
+         default="normal normal 60px 'Trebuchet MS',Trebuchet,sans-serif" value="normal normal 60px &#39;Trebuchet MS&#39;,Trebuchet,sans-serif"/>
+     <Variable name="header.text.color" description="Text Color" type="color" default="#ffffff"  value="#000000"/>
+   </Group>
+
+   <Group description="Blog Description" selector=".header .description">
+     <Variable name="description.text.color" description="Description Color" type="color"
+         default="$(body.text.color)"  value="#666666"/>
+   </Group>
+
+   <Group description="Tabs Text" selector=".tabs-inner .widget li a">
+     <Variable name="tabs.font" description="Font" type="font"
+         default="normal bold 16px 'Trebuchet MS',Trebuchet,sans-serif" value="normal bold 16px &#39;Trebuchet MS&#39;,Trebuchet,sans-serif"/>
+     <Variable name="tabs.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
+     <Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#ffffff" value="#ffffff"/>
+   </Group>
+
+   <Group description="Tabs Background" selector=".tabs-outer .PageList">
+     <Variable name="tabs.background.color" description="Background Color" type="color" default="transparent" value="transparent"/>
+     <Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="transparent" value="transparent"/>
+   </Group>
+
+   <Group description="Date Header" selector=".main-inner h2.date-header">
+     <Variable name="date.font" description="Font" type="font"
+         default="normal normal 14px 'Trebuchet MS',Trebuchet,sans-serif" value="normal normal 14px &#39;Trebuchet MS&#39;,Trebuchet,sans-serif"/>
+     <Variable name="date.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#666666"/>
+   </Group>
+
+   <Group description="Post Title" selector="h3.post-title a">
+     <Variable name="post.title.font" description="Font" type="font"
+         default="normal bold 20px 'Trebuchet MS',Trebuchet,sans-serif" value="normal bold 20px &#39;Trebuchet MS&#39;,Trebuchet,sans-serif"/>
+     <Variable name="post.title.text.color" description="Text Color" type="color"
+         default="#ffffff" value="#000000"/>
+   </Group>
+
+   <Group description="Post Background" selector=".column-center-inner">
+     <Variable name="post.background.color" description="Background Color" type="color"
+         default="transparent" value="#ffffff"/>
+     <Variable name="post.background.url" description="Post Background URL" type="url" default="none" value="none"/>
+   </Group>
+
+   <Group description="Gadget Title Color" selector="h2">
+     <Variable name="widget.title.font" description="Font" type="font"
+        default="normal bold 14px 'Trebuchet MS',Trebuchet,sans-serif" value="normal bold 14px &#39;Trebuchet MS&#39;,Trebuchet,sans-serif"/>
+     <Variable name="widget.title.text.color" description="Title Color" type="color" default="#ffffff" value="#ffffff"/>
+   </Group>
+
+   <Group description="Gadget Text" selector=".footer-inner .widget, .sidebar .widget">
+     <Variable name="widget.font" description="Font" type="font"
+        default="$(body.font)" value="normal normal 13px &#39;Trebuchet MS&#39;,Trebuchet,sans-serif"/>
+     <Variable name="widget.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#cccccc"/>
+   </Group>
+
+   <Group description="Gadget Links" selector=".sidebar .widget">
+     <Variable name="widget.link.color" description="Link Color" type="color" default="$(body.text.color)" value="#cccccc"/>
+     <Variable name="widget.link.visited.color" description="Visited Color" type="color" default="$(link.visited.color)" value="#cccccc"/>
+     <Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#ffffff" value="#ffffff"/>
+   </Group>
+
+   <Group description="Sidebar Background" selector=".column-left-inner .column-right-inner">
+     <Variable name="widget.outer.background.color" description="Background Color" type="color" default="transparent"  value="transparent"/>
+     <Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="transparent"  value="transparent"/>
+   </Group>
+
+   <Variable name="body.background" description="Body Background" type="background"
+       color="$(body.background.color)" default="$(color) none repeat-x scroll top center" value="$(color) none no-repeat scroll center center"/>
+   <Variable name="content.background" description="Content Background" type="background"
+       color="$(content.background.color)" default="$(color) none repeat scroll top center" value="transparent none repeat-x scroll top center"/>
+   <Variable name="comments.background" description="Comments Background" type="background"
+       default="#cccccc none repeat scroll top center" value="#cccccc none repeat scroll top center"/>
+
+   <Variable name="content.imageBorder.top.space" description="Content Image Border Top Space" type="length" default="0" min="0" max="100px" value="0"/>
+   <Variable name="content.imageBorder.top" description="Content Image Border Top" type="url" default="none" value="none"/>
+
+   <Variable name="content.margin" description="Content Margin Top" type="length" default="20px" min="0" max="100px" value="0"/>
+   <Variable name="content.padding" description="Content Padding" type="length" default="20px" min="0" max="100px" value="30px"/>
+   <Variable name="content.posts.padding" description="Posts Content Padding" type="length" default="10px" min="0" max="100px" value="20px"/>
+
+   <Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+       default="url(https://resources.blogblog.com/blogblog/data/1kt/travel/bg_black_50.png)" value="url(https://resources.blogblog.com/blogblog/data/1kt/travel/bg_black_50.png)"/>
+   <Variable name="tabs.selected.background.gradient" description="Tabs Selected Background Gradient" type="url"
+       default="url(https://resources.blogblog.com/blogblog/data/1kt/travel/bg_black_50.png)" value="url(https://resources.blogblog.com/blogblog/data/1kt/travel/bg_black_50.png)"/>
+   <Variable name="widget.outer.background.gradient" description="Sidebar Gradient" type="url"
+       default="url(https://resources.blogblog.com/blogblog/data/1kt/travel/bg_black_50.png)" value="url(https://resources.blogblog.com/blogblog/data/1kt/travel/bg_black_50.png)"/>
+   <Variable name="footer.background.gradient" description="Footer Background Gradient" type="url" default="none" value="url(https://resources.blogblog.com/blogblog/data/1kt/travel/bg_black_50.png)"/>
+   <Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+       default="transparent none repeat scroll top left" value="transparent none repeat scroll top left"/>
+   <Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff"  value="#ffffff"/>
+   <Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+   <Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
